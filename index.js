@@ -385,7 +385,7 @@ async function createIssue(owner, repo, milestones, issue) {
       props.assignees.push(settings.github.username);
     } else if (settings.usermap && settings.usermap[issue.assignee.username]) {
       // get GitHub username name from settings
-      props.assignees.push(settings.usermap[item.assignee.username]);
+      props.assignees.push(settings.usermap[issue.assignee.username]);
     }
   }
 
